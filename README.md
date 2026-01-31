@@ -28,6 +28,8 @@
 ---
 
 ## プログラム構成
+
+```text
 src/
 ├─ MainCUI.java              // CUI（コマンドライン）起動用メインクラス
 ├─ MainGUI.java              // GUI起動用メインクラス
@@ -50,6 +52,7 @@ src/
 └─ RecordUtils.java          // 補助処理用ユーティリティ
 
 
+
 ---
 
 ## 工夫した点
@@ -66,3 +69,4 @@ src/
 ```bash
 javac src/*.java
 java MainCUI
+
