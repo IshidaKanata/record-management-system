@@ -1,10 +1,68 @@
-Record Management System
+# 成績管理システム（Record Management System）
 
-���̃v���O�����́AJava�̎��Ƃō쐬�������ъǗ��V�X�e���ł��B
-�w�K�ҁE�ȖځE�ۑ�Ȃǂ��I�u�W�F�N�g�Ƃ��ĊǗ����A
-CUI��GUI�̗����Ő��т�\���ł���悤�ɂ��Ă��܂��B
+## これは何？
+本プロジェクトは、学生の成績情報を管理するための簡易的な成績管理システムです。  
+学生・科目・成績といった情報をオブジェクトとして管理し、登録・参照・表示などの基本的な業務処理を想定して実装しました。
 
-�y�w�񂾂��Ɓz
-�E�C���^�t�F�[�X���g�����݌v
-�E�N���X���Ƃ̖������S
-�E�����ƕ\���𕪂��čl���邱��
+大学の講義・演習で学んだ **オブジェクト指向設計** を基に、  
+実際の業務系システムを意識したクラス構成・責務分離を行っています。
+
+---
+
+## 何ができる？
+- 学生情報の管理
+- 科目ごとの成績情報の管理
+- 成績データの一覧表示
+- CUI（コマンドライン）による操作
+- GUI（画面）による操作
+- データ構造を意識した処理設計
+
+---
+
+## 使用している技術
+- Java
+- オブジェクト指向プログラミング
+- インターフェースを用いた設計
+- CUI / GUI 両対応構成
+
+---
+
+## プログラム構成
+src/
+├─ MainCUI.java              // CUI（コマンドライン）起動用メインクラス
+├─ MainGUI.java              // GUI起動用メインクラス
+├─ RecordSystem.java         // システム全体の制御クラス
+├─ CUI.java                  // コマンドライン操作用UI
+├─ GUI.java                  // GUI操作用UI
+├─ UI.java                   // UI共通インターフェース
+├─ Educatee.java             // 学生情報を管理するクラス
+├─ EducateeList.java         // 学生リストを管理するクラス
+├─ EducateeListManager.java  // 学生検索・管理用クラス
+├─ Subject.java              // 科目情報を管理するクラス
+├─ Record.java               // 成績データ用インターフェース
+├─ Task.java                 // 課題成績クラス
+├─ Test.java                 // テスト成績クラス
+├─ Report.java               // レポート成績クラス
+├─ Printable.java            // 表示用インターフェース
+├─ EducateeAdapter.java      // 学生情報表示用アダプタ
+├─ SubjectAdapter.java       // 科目情報表示用アダプタ
+├─ RecordDB.java             // サンプルデータ生成クラス
+└─ RecordUtils.java          // 補助処理用ユーティリティ
+
+
+---
+
+## 工夫した点
+- UI（CUI / GUI）をインターフェースで分離し、実装の切り替えを容易にした
+- 成績データをインターフェースとして定義し、課題・テスト・レポートで共通化
+- 表示処理をAdapterクラスに分離し、責務が集中しない構造を意識
+- 実際の業務システムで使われる「管理・検索・表示」の流れを再現
+
+---
+
+## 実行方法
+
+### CUI版（コマンドライン）
+```bash
+javac src/*.java
+java MainCUI
