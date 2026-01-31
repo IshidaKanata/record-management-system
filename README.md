@@ -32,25 +32,25 @@
 ## ディレクトリ構成
 ```text
 src/
-├─ MainCUI.java // CUI（コマンドライン）起動用メインクラス
-├─ MainGUI.java // GUI起動用メインクラス
-├─ RecordSystem.java // システム全体の制御クラス
-├─ CUI.java // コマンドライン操作用UI
-├─ GUI.java // GUI操作用UI
-├─ UI.java // UI共通インターフェース
-├─ Educatee.java // 学生情報を管理するクラス
-├─ EducateeList.java // 学生リストを管理するクラス
-├─ EducateeListManager.java // 学生検索・管理用クラス
-├─ Subject.java // 科目情報を管理するクラス
-├─ Record.java // 成績データ用インターフェース
-├─ Task.java // 課題成績クラス
-├─ Test.java // テスト成績クラス
-├─ Report.java // レポート成績クラス
-├─ Printable.java // 表示用インターフェース
-├─ EducateeAdapter.java // 学生情報表示用アダプタ
-├─ SubjectAdapter.java // 科目情報表示用アダプタ
-├─ RecordDB.java // サンプルデータ生成クラス
-└─ RecordUtils.java // 補助処理用ユーティリティ
+├─ MainCUI.java # CUI（コマンドライン）起動用メインクラス
+├─ MainGUI.java # GUI起動用メインクラス
+├─ RecordSystem.java # システム全体の制御クラス
+├─ CUI.java # コマンドライン操作用UI
+├─ GUI.java # GUI操作用UI
+├─ UI.java # UI共通インターフェース
+├─ Educatee.java # 学生情報を管理するクラス
+├─ EducateeList.java # 学生リストを管理するクラス
+├─ EducateeListManager.java # 学生検索・管理用クラス
+├─ Subject.java # 科目情報を管理するクラス
+├─ Record.java # 成績データ用インターフェース
+├─ Task.java # 課題成績クラス
+├─ Test.java # テスト成績クラス
+├─ Report.java # レポート成績クラス
+├─ Printable.java # 表示用インターフェース
+├─ EducateeAdapter.java # 学生情報表示用アダプタ
+├─ SubjectAdapter.java # 科目情報表示用アダプタ
+├─ RecordDB.java # サンプルデータ生成クラス
+└─ RecordUtils.java # 補助処理用ユーティリティ
 
 ---
 
@@ -60,12 +60,15 @@ src/
 ```bash
 javac src/*.java
 java MainCUI
+```
 
 ---
 
 ### GUI版
+```bash
 javac src/*.java
 java MainGUI
+```
 
 ---
 
@@ -97,4 +100,5 @@ java MainGUI
 ## 補足
 本システムは学習目的で作成したものであり、
 永続化機能や認証機能などは実装していません。
+
 
