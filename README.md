@@ -51,7 +51,12 @@ src/
 ├─ RecordDB.java             // サンプルデータ生成クラス
 └─ RecordUtils.java          // 補助処理用ユーティリティ
 
+---
 
+### ② 実行方法（CUI版）の末尾にこれを追加
+```bash
+javac src/*.java
+java MainCUI
 
 ---
 
@@ -69,4 +74,5 @@ src/
 ```bash
 javac src/*.java
 java MainCUI
+
 
