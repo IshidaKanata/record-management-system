@@ -51,6 +51,7 @@ src/
 ├─ SubjectAdapter.java # 科目情報表示用アダプタ
 ├─ RecordDB.java # サンプルデータ生成クラス
 └─ RecordUtils.java # 補助処理用ユーティリティ
+```
 
 ---
 
@@ -100,5 +101,6 @@ java MainGUI
 ## 補足
 本システムは学習目的で作成したものであり、
 永続化機能や認証機能などは実装していません。
+
 
 
